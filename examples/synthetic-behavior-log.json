@@ -1,0 +1,42 @@
+{
+  "exampleType": "synthetic",
+  "noRealChildData": true,
+  "description": "A fabricated MontessoriBehaviorLog example for documentation and local pipeline testing only.",
+  "log": {
+    "timestamp": "2026-05-13T20:00:00+08:00",
+    "source": {
+      "inputType": "synthetic-image",
+      "deviceName": "demo-local-input",
+      "cloudUpload": false
+    },
+    "environmentState": {
+      "isWorkMatDeployed": true,
+      "areToolsStored": false,
+      "abnormalItems": [
+        "demo-block-left-on-work-mat"
+      ]
+    },
+    "childState": {
+      "isInWorkZone": true,
+      "currentFocusEntity": "synthetic-color-sorting-tray",
+      "focusDurationMinutes": 12
+    },
+    "spatialData": {
+      "childPosition": {
+        "x": 0.42,
+        "y": 0.61,
+        "z": 0.0
+      }
+    },
+    "modelOutput": {
+      "confidence": "medium",
+      "language": "Observed a likely work-mat activity. Parent confirmation is required.",
+      "requiresParentReview": true
+    },
+    "parentCorrection": {
+      "status": "pending",
+      "note": null
+    }
+  }
+}
+
