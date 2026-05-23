@@ -1,0 +1,37 @@
+[
+  {
+    "id": "qwen/qwen3.5-9b",
+    "label": "qwen3.5-9b",
+    "enabled": true
+  },
+  {
+    "id": "qwen/qwen3.5-27b",
+    "label": "qwen3.5-27b",
+    "enabled": true
+  },
+  {
+    "id": "qwen/qwen3.5-35b-a3b",
+    "label": "qwen3.5-35b-a3b",
+    "enabled": true
+  },
+  {
+    "id": "qwen/qwen3.5-flash-02-23",
+    "label": "qwen3.5-flash",
+    "enabled": true
+  },
+  {
+    "id": "qwen/qwen3.5-plus-20260420",
+    "label": "qwen3.5-plus",
+    "enabled": false
+  },
+  {
+    "id": "qwen/qwen3.5-397b-a17b",
+    "label": "qwen3.5-397b-a17b",
+    "enabled": false
+  },
+  {
+    "id": "qwen/qwen3-vl-30b-a3b-instruct",
+    "label": "qwen3-vl-30b-a3b-reference",
+    "enabled": false
+  }
+]

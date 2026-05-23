@@ -1,0 +1,140 @@
+{
+  "name": "china-open-vlm-redline",
+  "purpose": "Hard allowlist for OpenRouter tests tied to the Jetson Orin Nano multimodal project.",
+  "hard_rules": [
+    "Only models listed in allowed_models may be executed by run_openrouter_eval.js.",
+    "Default testing favors open or open-weight Chinese vision-language models.",
+    "Large API-only or non-open reference models must stay disabled unless this allowlist is edited deliberately.",
+    "Do not add non-China closed models to this file unless they are used as a clearly labeled reference baseline."
+  ],
+  "allowed_models": [
+    {
+      "id": "qwen/qwen3-vl-8b-instruct",
+      "label": "qwen3-vl-8b-instruct",
+      "origin": "China",
+      "openness": "open-weight",
+      "project_fit": "Closest cloud proxy for a small local/edge VLM; use first for Jetson-feasibility checks.",
+      "priority": 1
+    },
+    {
+      "id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "label": "qwen3-vl-30b-a3b-instruct",
+      "origin": "China",
+      "openness": "open-weight",
+      "project_fit": "Higher-quality Qwen VL candidate for cloud-assisted edge workflow and quality ceiling.",
+      "priority": 2
+    },
+    {
+      "id": "qwen/qwen3-vl-32b-instruct",
+      "label": "qwen3-vl-32b-instruct",
+      "origin": "China",
+      "openness": "open-weight",
+      "project_fit": "Dense Qwen VL comparison point for OCR, chart, table, and spatial reasoning.",
+      "priority": 3
+    },
+    {
+      "id": "z-ai/glm-4.6v",
+      "label": "glm-4.6v",
+      "origin": "China",
+      "openness": "open-weight-preferred",
+      "project_fit": "Non-Qwen Chinese VLM baseline for robustness comparison.",
+      "priority": 4
+    },
+    {
+      "id": "z-ai/glm-5v-turbo",
+      "label": "glm-5v-turbo",
+      "origin": "China",
+      "openness": "api/open-weight-candidate",
+      "project_fit": "Newer GLM vision turbo candidate for robustness and latency comparison against Qwen.",
+      "priority": 4.5
+    },
+    {
+      "id": "qwen/qwen2.5-vl-72b-instruct",
+      "label": "qwen2.5-vl-72b-instruct",
+      "origin": "China",
+      "openness": "open-weight",
+      "project_fit": "Older strong open Qwen VL upper baseline; useful when small models fail.",
+      "priority": 5
+    },
+    {
+      "id": "qwen/qwen3-vl-8b-thinking",
+      "label": "qwen3-vl-8b-thinking",
+      "origin": "China",
+      "openness": "open-weight",
+      "project_fit": "Reasoning variant for difficult spatial/chart items; use sparingly because completion tokens may rise.",
+      "priority": 6
+    },
+    {
+      "id": "qwen/qwen3-vl-30b-a3b-thinking",
+      "label": "qwen3-vl-30b-a3b-thinking",
+      "origin": "China",
+      "openness": "open-weight",
+      "project_fit": "Reasoning upper check after instruct models; disabled from default smoke run for budget control.",
+      "priority": 7
+    },
+    {
+      "id": "baidu/ernie-4.5-vl-28b-a3b",
+      "label": "ernie-4.5-vl-28b-a3b",
+      "origin": "China",
+      "openness": "open-weight-candidate",
+      "project_fit": "Chinese MoE VLM alternative for document, table, chart, and video-style tasks.",
+      "priority": 8
+    },
+    {
+      "id": "opengvlab/internvl3-14b",
+      "label": "internvl3-14b",
+      "origin": "China",
+      "openness": "open-weight",
+      "project_fit": "OpenGVLab VLM family baseline exposed by OpenRouter; useful independent comparison against Qwen.",
+      "priority": 9
+    },
+    {
+      "id": "opengvlab/internvl3-78b",
+      "label": "internvl3-78b",
+      "origin": "China",
+      "openness": "open-weight",
+      "project_fit": "Large InternVL3 quality baseline from a high-ranking open VLM family.",
+      "priority": 10
+    },
+    {
+      "id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "label": "qwen3-vl-235b-a22b-instruct",
+      "origin": "China",
+      "openness": "open-weight",
+      "project_fit": "Qwen3-VL high-end open MoE quality ceiling for cloud fallback comparisons.",
+      "priority": 11
+    },
+    {
+      "id": "qwen/qwen3-vl-235b-a22b-thinking",
+      "label": "qwen3-vl-235b-a22b-thinking",
+      "origin": "China",
+      "openness": "open-weight",
+      "project_fit": "Qwen3-VL reasoning ceiling; use sparingly because thinking responses can expand output tokens.",
+      "priority": 12
+    },
+    {
+      "id": "qwen/qwen3.5-9b",
+      "label": "qwen3.5-9b-api-reference",
+      "origin": "China",
+      "openness": "api-reference",
+      "project_fit": "Qwen3.5 reference for the user's original target; not part of open-source-first smoke run.",
+      "priority": 13
+    },
+    {
+      "id": "qwen/qwen3.5-27b",
+      "label": "qwen3.5-27b-api-reference",
+      "origin": "China",
+      "openness": "api-reference",
+      "project_fit": "Larger Qwen3.5 reference for checking whether the general multimodal line beats Qwen3-VL on project tasks.",
+      "priority": 13.5
+    },
+    {
+      "id": "qwen/qwen3.5-flash-02-23",
+      "label": "qwen3.5-flash-api-reference",
+      "origin": "China",
+      "openness": "api-reference",
+      "project_fit": "Fast Qwen3.5 reference for cloud-assisted workflow; not a local open model target.",
+      "priority": 14
+    }
+  ]
+}

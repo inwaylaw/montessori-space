@@ -1,0 +1,7 @@
+[
+  {
+    "id": "replace/with-openrouter-vision-model-id",
+    "label": "my-first-vision-model",
+    "enabled": false
+  }
+]

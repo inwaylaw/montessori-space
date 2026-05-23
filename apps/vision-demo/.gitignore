@@ -1,0 +1,5 @@
+.env
+output/manual-observations.jsonl
+output/runs/
+output/test-*/
+*.log

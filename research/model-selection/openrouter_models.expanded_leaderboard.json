@@ -1,0 +1,32 @@
+[
+  {
+    "id": "qwen/qwen3-vl-32b-instruct",
+    "label": "qwen3-vl-32b-instruct",
+    "enabled": true
+  },
+  {
+    "id": "opengvlab/internvl3-14b",
+    "label": "internvl3-14b",
+    "enabled": true
+  },
+  {
+    "id": "baidu/ernie-4.5-vl-28b-a3b",
+    "label": "ernie-4.5-vl-28b-a3b",
+    "enabled": true
+  },
+  {
+    "id": "opengvlab/internvl3-78b",
+    "label": "internvl3-78b",
+    "enabled": true
+  },
+  {
+    "id": "qwen/qwen3-vl-235b-a22b-instruct",
+    "label": "qwen3-vl-235b-a22b-instruct",
+    "enabled": true
+  },
+  {
+    "id": "qwen/qwen3-vl-235b-a22b-thinking",
+    "label": "qwen3-vl-235b-a22b-thinking",
+    "enabled": false
+  }
+]

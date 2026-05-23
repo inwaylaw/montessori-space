@@ -1,0 +1,50 @@
+[
+  {
+    "id": "seed-today-pouring",
+    "dateLabel": "今日",
+    "title": "倒水练习托盘",
+    "subtitle": "日常生活",
+    "activityCategory": "practical_life",
+    "confidence": "medium",
+    "workArea": "桌面",
+    "childAction": "操作中",
+    "materials": ["倒水托盘", "小水壶", "杯子"],
+    "environmentCues": ["托盘边缘有少量水滴", "材料仍在工作区"],
+    "safetyCues": [],
+    "evidence": ["合成样本显示倒水托盘和水滴线索"],
+    "reviewPrompts": ["确认水滴是否需要家长处理", "确认材料是否已经归位"],
+    "needsParentReview": true,
+    "sourceName": "bundled synthetic seed",
+    "imageName": "10_daily_report_preview",
+    "privacy": {
+      "noIdentity": true,
+      "noEmotion": true,
+      "noDiagnosis": true,
+      "noScoring": true
+    }
+  },
+  {
+    "id": "seed-review-red-rods",
+    "dateLabel": "昨日",
+    "title": "红棒未归位",
+    "subtitle": "归位与秩序",
+    "activityCategory": "order_return",
+    "confidence": "high",
+    "workArea": "地垫",
+    "childAction": "归位中",
+    "materials": ["红棒", "工作毯"],
+    "environmentCues": ["材料在工作毯边缘停留", "架面仍有空位"],
+    "safetyCues": [],
+    "evidence": ["合成样本 ms_005 标注为红棒归位线索"],
+    "reviewPrompts": ["确认是否属于未归位", "确认是否保留给下一段活动"],
+    "needsParentReview": true,
+    "sourceName": "bundled synthetic seed",
+    "imageName": "03_red_rods_not_returned",
+    "privacy": {
+      "noIdentity": true,
+      "noEmotion": true,
+      "noDiagnosis": true,
+      "noScoring": true
+    }
+  }
+]

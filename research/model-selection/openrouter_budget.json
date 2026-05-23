@@ -1,0 +1,35 @@
+{
+  "name": "safe-smoke-budget",
+  "purpose": "Keep OpenRouter multimodal evaluation bounded while selecting models for the Jetson edge-AI project.",
+  "max_total_calls": 15,
+  "max_models_per_run": 3,
+  "max_items_per_model": 5,
+  "max_retries": 1,
+  "min_delay_ms": 1500,
+  "max_tokens": 80,
+  "notes": [
+    "total_calls is computed as models * items * (1 + retries).",
+    "Default budget is for a smoke test only.",
+    "For a full run, edit this file deliberately instead of bypassing it from the command line."
+  ],
+  "suggested_profiles": {
+    "smoke": {
+      "models": 3,
+      "items_per_model": 5,
+      "retries": 0,
+      "total_calls": 15
+    },
+    "focused": {
+      "models": 5,
+      "items_per_model": 5,
+      "retries": 0,
+      "total_calls": 25
+    },
+    "full_manual_upgrade": {
+      "models": 2,
+      "items_per_model": 27,
+      "retries": 0,
+      "total_calls": 54
+    }
+  }
+}

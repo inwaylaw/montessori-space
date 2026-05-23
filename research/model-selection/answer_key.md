@@ -1,0 +1,29 @@
+﻿# Multimodal Eval Answer Key
+
+- **mve_001** ocr_receipt: A-1047
+- **mve_002** ocr_receipt: 57.80 RMB
+- **mve_003** ocr_receipt: 2 杯
+- **mve_004** counting: 4 个
+- **mve_005** visual_reasoning: Water / 矿泉水
+- **mve_006** scene_understanding: 绿色
+- **mve_007** ocr_sign: 30
+- **mve_008** spatial_reasoning: 右侧
+- **mve_009** chart: May / 5月
+- **mve_010** chart: 80
+- **mve_011** chart: May / 5月
+- **mve_012** table: 周三 14:30
+- **mve_013** table: Wang / 王
+- **mve_014** ui: Online / 在线
+- **mve_015** ui: 3
+- **mve_016** ui: Run Eval
+- **mve_017** diagram: Decision
+- **mve_018** diagram: Resize 和 OCR
+- **mve_019** spatial_reasoning: Lab A
+- **mve_020** spatial_reasoning: Storage
+- **mve_021** spatial_reasoning: 右下方
+- **mve_022** multilingual_ocr: 右边
+- **mve_023** multilingual_ocr: 入口
+- **mve_024** safety: 地面积水 / water spill
+- **mve_025** safety: 护目镜
+- **mve_026** multi_image_compare: Box B
+- **mve_027** multi_image_compare: Box C

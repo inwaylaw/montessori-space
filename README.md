@@ -18,11 +18,28 @@ v0.1 只承诺一个克制目标：先验证 Phase 1 Dummy Pipeline，也就是�
 
 Phase 2-4 中的本地视觉模型、蒙氏语义校准和低侵入硬件反馈，仍是后续方向，不属于当前首发承诺。
 
+## 版本进展
+
+v0.1 是 GitHub 先行版，重点是项目边界、隐私原则、合成示例和安全协作入口。
+
+v0.2 在不覆盖 v0.1 内容的基础上，新增了一个可运行的视觉识别示范和研究记录：
+
+- `apps/vision-demo/`: Node.js 本地 Web 观察台、本地模型代理、结构化观察 Schema、合成蒙氏帧测试集和 iOS 每日卡片 MVP。
+- `research/model-selection/`: 通用中文多模态模型评测集、OpenRouter 受控评测脚本、模型预算和红线配置。
+- `research/montessori-frame-eval/`: 面向蒙氏空间观察卡片的合成帧评测和初步结果。
+- `docs/cloud-assisted-demo.md`: OpenRouter 云端辅助演示模式的边界说明。
+
+重要区别：v0.2 的 OpenRouter 代理只是 `cloud-assisted demo mode`。它可以帮助研究云端 VLM 是否理解合成蒙氏帧，但它不是最终的本地部署方案，也不能被描述成“被分析数据一定不上云”。长期目标仍是 `local-first project`，真正本地 VLM/Jetson 推理仍在后续路线图中。
+
 ## 阅读入口
 
 - [隐私与数据边界](PRIVACY.md)
 - [贡献指南](CONTRIBUTING.md)
 - [路线图](ROADMAP.md)
+- [OpenRouter 云端辅助演示边界](docs/cloud-assisted-demo.md)
+- [v0.2 可运行视觉识别示范](apps/vision-demo/README.md)
+- [模型选择研究记录](research/model-selection/MODEL_SELECTION.md)
+- [蒙氏帧评测结果](research/montessori-frame-eval/EVALUATION_FINDINGS.md)
 - [合成行为日志示例](examples/synthetic-behavior-log.json)
 - [合成日报示例](examples/synthetic-daily-report.md)
 

@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000026 /* MontessoriDailyCardsWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 000000000000000000000013 /* MontessoriDailyCardsWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		000000000000000000000031 /* MontessoriDailyCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000030 /* MontessoriDailyCardsApp.swift */; };
+		000000000000000000000033 /* DailyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000032 /* DailyCard.swift */; };
+		000000000000000000000034 /* DailyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000032 /* DailyCard.swift */; };
+		000000000000000000000036 /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000035 /* CardRepository.swift */; };
+		000000000000000000000037 /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000035 /* CardRepository.swift */; };
+		000000000000000000000039 /* LocalDemoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000038 /* LocalDemoClient.swift */; };
+		000000000000000000000041 /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000040 /* CardStore.swift */; };
+		000000000000000000000043 /* AppIntentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000042 /* AppIntentRouter.swift */; };
+		000000000000000000000045 /* MontessoriDailyIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000044 /* MontessoriDailyIntents.swift */; };
+		000000000000000000000047 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000046 /* ContentView.swift */; };
+		000000000000000000000049 /* DailyCardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000048 /* DailyCardViews.swift */; };
+		000000000000000000000051 /* DailyCardsSeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000050 /* DailyCardsSeed.json */; };
+		000000000000000000000052 /* DailyCardsSeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000050 /* DailyCardsSeed.json */; };
+		000000000000000000000055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000054 /* Assets.xcassets */; };
+		000000000000000000000057 /* 10_daily_report_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000056 /* 10_daily_report_preview.png */; };
+		000000000000000000000058 /* 10_daily_report_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000056 /* 10_daily_report_preview.png */; };
+		000000000000000000000060 /* 03_red_rods_not_returned.png in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000059 /* 03_red_rods_not_returned.png */; };
+		000000000000000000000061 /* 03_red_rods_not_returned.png in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000059 /* 03_red_rods_not_returned.png */; };
+		000000000000000000000063 /* 02_pouring_tray.png in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000062 /* 02_pouring_tray.png */; };
+		000000000000000000000064 /* 02_pouring_tray.png in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000062 /* 02_pouring_tray.png */; };
+		000000000000000000000066 /* MontessoriDailyCardsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000065 /* MontessoriDailyCardsWidgetBundle.swift */; };
+		000000000000000000000068 /* DailyCardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000067 /* DailyCardWidget.swift */; };
+		000000000000000000000070 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000071 /* PrivacyInfo.xcprivacy */; };
+		000000000000000000000072 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000073 /* PrivacyInfo.xcprivacy */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000000000000000025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000011;
+			remoteInfo = MontessoriDailyCardsWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		000000000000000000000017 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				000000000000000000000026 /* MontessoriDailyCardsWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000012 /* MontessoriDailyCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MontessoriDailyCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000013 /* MontessoriDailyCardsWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MontessoriDailyCardsWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000030 /* MontessoriDailyCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontessoriDailyCardsApp.swift; sourceTree = "<group>"; };
+		000000000000000000000032 /* DailyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/DailyCard.swift; sourceTree = "<group>"; };
+		000000000000000000000035 /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/CardRepository.swift; sourceTree = "<group>"; };
+		000000000000000000000038 /* LocalDemoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/LocalDemoClient.swift; sourceTree = "<group>"; };
+		000000000000000000000040 /* CardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/CardStore.swift; sourceTree = "<group>"; };
+		000000000000000000000042 /* AppIntentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/AppIntentRouter.swift; sourceTree = "<group>"; };
+		000000000000000000000044 /* MontessoriDailyIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/MontessoriDailyIntents.swift; sourceTree = "<group>"; };
+		000000000000000000000046 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
+		000000000000000000000048 /* DailyCardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/DailyCardViews.swift; sourceTree = "<group>"; };
+		000000000000000000000050 /* DailyCardsSeed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Resources/DailyCardsSeed.json; sourceTree = "<group>"; };
+		000000000000000000000053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000000000000000000000056 /* 10_daily_report_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ../testset/images/10_daily_report_preview.png; sourceTree = SOURCE_ROOT; };
+		000000000000000000000059 /* 03_red_rods_not_returned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ../testset/images/03_red_rods_not_returned.png; sourceTree = SOURCE_ROOT; };
+		000000000000000000000062 /* 02_pouring_tray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ../testset/images/02_pouring_tray.png; sourceTree = SOURCE_ROOT; };
+		000000000000000000000065 /* MontessoriDailyCardsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontessoriDailyCardsWidgetBundle.swift; sourceTree = "<group>"; };
+		000000000000000000000067 /* DailyCardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardWidget.swift; sourceTree = "<group>"; };
+		000000000000000000000069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000071 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		000000000000000000000073 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000016 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000020 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000004 /* MontessoriDailyCards */,
+				000000000000000000000005 /* MontessoriDailyCardsWidget */,
+				000000000000000000000006 /* Shared Demo Images */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000012 /* MontessoriDailyCards.app */,
+				000000000000000000000013 /* MontessoriDailyCardsWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 /* MontessoriDailyCards */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000053 /* Info.plist */,
+				000000000000000000000030 /* MontessoriDailyCardsApp.swift */,
+				000000000000000000000032 /* DailyCard.swift */,
+				000000000000000000000035 /* CardRepository.swift */,
+				000000000000000000000038 /* LocalDemoClient.swift */,
+				000000000000000000000040 /* CardStore.swift */,
+				000000000000000000000042 /* AppIntentRouter.swift */,
+				000000000000000000000044 /* MontessoriDailyIntents.swift */,
+				000000000000000000000046 /* ContentView.swift */,
+				000000000000000000000048 /* DailyCardViews.swift */,
+				000000000000000000000050 /* DailyCardsSeed.json */,
+				000000000000000000000054 /* Assets.xcassets */,
+				000000000000000000000071 /* PrivacyInfo.xcprivacy */,
+			);
+			path = MontessoriDailyCards;
+			sourceTree = "<group>";
+		};
+		000000000000000000000005 /* MontessoriDailyCardsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000069 /* Info.plist */,
+				000000000000000000000065 /* MontessoriDailyCardsWidgetBundle.swift */,
+				000000000000000000000067 /* DailyCardWidget.swift */,
+				000000000000000000000073 /* PrivacyInfo.xcprivacy */,
+			);
+			path = MontessoriDailyCardsWidget;
+			sourceTree = "<group>";
+		};
+		000000000000000000000006 /* Shared Demo Images */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000056 /* 10_daily_report_preview.png */,
+				000000000000000000000059 /* 03_red_rods_not_returned.png */,
+				000000000000000000000062 /* 02_pouring_tray.png */,
+			);
+			name = "Shared Demo Images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000010 /* MontessoriDailyCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000112 /* Build configuration list for PBXNativeTarget "MontessoriDailyCards" */;
+			buildPhases = (
+				000000000000000000000014 /* Sources */,
+				000000000000000000000016 /* Frameworks */,
+				000000000000000000000015 /* Resources */,
+				000000000000000000000017 /* Embed App Extensions */,
+			);
+			buildRules = ();
+			dependencies = (
+				000000000000000000000024 /* PBXTargetDependency */,
+			);
+			name = MontessoriDailyCards;
+			productName = MontessoriDailyCards;
+			productReference = 000000000000000000000012 /* MontessoriDailyCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000011 /* MontessoriDailyCardsWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000122 /* Build configuration list for PBXNativeTarget "MontessoriDailyCardsWidget" */;
+			buildPhases = (
+				000000000000000000000018 /* Sources */,
+				000000000000000000000020 /* Frameworks */,
+				000000000000000000000019 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = MontessoriDailyCardsWidget;
+			productName = MontessoriDailyCardsWidget;
+			productReference = 000000000000000000000013 /* MontessoriDailyCardsWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					000000000000000000000010 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					000000000000000000000011 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000102 /* Build configuration list for PBXProject "MontessoriDailyCards" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000010 /* MontessoriDailyCards */,
+				000000000000000000000011 /* MontessoriDailyCardsWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000051 /* DailyCardsSeed.json in Resources */,
+				000000000000000000000055 /* Assets.xcassets in Resources */,
+				000000000000000000000057 /* 10_daily_report_preview.png in Resources */,
+				000000000000000000000060 /* 03_red_rods_not_returned.png in Resources */,
+				000000000000000000000063 /* 02_pouring_tray.png in Resources */,
+				000000000000000000000070 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000019 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000052 /* DailyCardsSeed.json in Resources */,
+				000000000000000000000058 /* 10_daily_report_preview.png in Resources */,
+				000000000000000000000061 /* 03_red_rods_not_returned.png in Resources */,
+				000000000000000000000064 /* 02_pouring_tray.png in Resources */,
+				000000000000000000000072 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000031 /* MontessoriDailyCardsApp.swift in Sources */,
+				000000000000000000000033 /* DailyCard.swift in Sources */,
+				000000000000000000000036 /* CardRepository.swift in Sources */,
+				000000000000000000000039 /* LocalDemoClient.swift in Sources */,
+				000000000000000000000041 /* CardStore.swift in Sources */,
+				000000000000000000000043 /* AppIntentRouter.swift in Sources */,
+				000000000000000000000045 /* MontessoriDailyIntents.swift in Sources */,
+				000000000000000000000047 /* ContentView.swift in Sources */,
+				000000000000000000000049 /* DailyCardViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000034 /* DailyCard.swift in Sources */,
+				000000000000000000000037 /* CardRepository.swift in Sources */,
+				000000000000000000000066 /* MontessoriDailyCardsWidgetBundle.swift in Sources */,
+				000000000000000000000068 /* DailyCardWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000000000000000000024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000011 /* MontessoriDailyCardsWidget */;
+			targetProxy = 000000000000000000000025 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000000000000000000000101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000000000000000000110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MontessoriDailyCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.montessori.dailycards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000000111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MontessoriDailyCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.montessori.dailycards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		000000000000000000000120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MontessoriDailyCardsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.montessori.dailycards.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000000121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MontessoriDailyCardsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.montessori.dailycards.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000102 /* Build configuration list for PBXProject "MontessoriDailyCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000100 /* Debug */,
+				000000000000000000000101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000112 /* Build configuration list for PBXNativeTarget "MontessoriDailyCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000110 /* Debug */,
+				000000000000000000000111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000122 /* Build configuration list for PBXNativeTarget "MontessoriDailyCardsWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000120 /* Debug */,
+				000000000000000000000121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

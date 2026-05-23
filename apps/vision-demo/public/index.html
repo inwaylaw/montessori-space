@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>蒙氏空间视觉观察</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Montessori Space</p>
+        <h1>视觉观察台</h1>
+      </div>
+      <div class="top-actions">
+        <a class="preview-link" href="/ios-preview.html">iOS 预览</a>
+        <div class="status" id="runtimeStatus">连接中</div>
+      </div>
+    </header>
+
+    <section class="workspace" aria-label="vision workspace">
+      <div class="stage">
+        <video id="video" playsinline muted></video>
+        <canvas id="canvas"></canvas>
+        <img id="samplePreview" alt="synthetic Montessori sample">
+      </div>
+
+      <aside class="control-panel">
+        <div class="button-row">
+          <button id="startCamera" type="button">启用摄像头</button>
+          <button id="captureFrame" type="button" class="secondary">截取</button>
+        </div>
+
+        <label class="field">
+          <span>样张</span>
+          <select id="sampleSelect"></select>
+        </label>
+
+        <label class="field">
+          <span>本地图片</span>
+          <input id="fileInput" type="file" accept="image/*">
+        </label>
+
+        <label class="field">
+          <span>现场备注</span>
+          <textarea id="note" rows="3" placeholder="可空"></textarea>
+        </label>
+
+        <div class="button-row">
+          <button id="analyzeFrame" type="button">识别</button>
+          <button id="saveObservation" type="button" class="secondary" disabled>保存日志</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="result-layout" aria-label="observation result">
+      <div class="summary-strip">
+        <div>
+          <span>活动</span>
+          <strong id="activityLabel">未识别</strong>
+        </div>
+        <div>
+          <span>类别</span>
+          <strong id="activityCategory">-</strong>
+        </div>
+        <div>
+          <span>置信度</span>
+          <strong id="confidence">-</strong>
+        </div>
+        <div>
+          <span>复核</span>
+          <strong id="reviewFlag">-</strong>
+        </div>
+      </div>
+      <pre id="jsonOutput">{}</pre>
+    </section>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

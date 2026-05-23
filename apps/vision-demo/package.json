@@ -1,0 +1,18 @@
+{
+  "name": "montessori-space-vision-demo",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Cloud-assisted demonstration workflow for Montessori Space activity observation.",
+  "scripts": {
+    "test": "node ./tests/run-tests.mjs",
+    "eval:dry": "node ./src/evaluate.mjs --dry-run --limit 5",
+    "eval:mock": "node ./src/evaluate.mjs --mock --limit 15",
+    "eval:smoke": "node ./src/evaluate.mjs --limit 15",
+    "rescore": "node ./src/rescore.mjs",
+    "serve": "node ./src/server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

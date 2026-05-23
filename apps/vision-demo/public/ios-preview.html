@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>蒙氏每日卡片 iPhone 预览</title>
+  <link rel="stylesheet" href="/ios-preview.css">
+</head>
+<body>
+  <main class="preview-shell">
+    <section class="control-rail" aria-label="preview controls">
+      <div>
+        <p class="eyebrow">Montessori Space</p>
+        <h1>iPhone 预览</h1>
+      </div>
+
+      <div class="mode-switch" role="tablist" aria-label="preview mode">
+        <button type="button" class="active" data-mode="today" role="tab">今日</button>
+        <button type="button" data-mode="review" role="tab">复核</button>
+        <button type="button" data-mode="widget" role="tab">小组件</button>
+      </div>
+
+      <button type="button" class="sync-button" id="syncButton">
+        <span class="sync-icon">↻</span>
+        同步演示台
+      </button>
+
+      <a class="text-link" href="/">返回观察台</a>
+
+      <dl class="rail-facts">
+        <div>
+          <dt>数据源</dt>
+          <dd id="sourceLabel">读取中</dd>
+        </div>
+        <div>
+          <dt>原始图像</dt>
+          <dd id="rawImageLabel">不保存</dd>
+        </div>
+        <div>
+          <dt>系统入口</dt>
+          <dd>Widget / Shortcuts</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="device-wrap" aria-label="iphone preview">
+      <div class="phone" id="phone">
+        <div class="phone-bar">
+          <span>9:41</span>
+          <span class="notch"></span>
+          <span>5G  ▰</span>
+        </div>
+
+        <div class="app-screen" id="appScreen">
+          <header class="app-header">
+            <div>
+              <p>Montessori Space</p>
+              <h2>每日卡片</h2>
+            </div>
+            <button type="button" class="icon-button" id="phoneSyncButton" aria-label="sync daily card">↻</button>
+          </header>
+
+          <section class="hero-card" id="heroCard">
+            <img id="heroImage" alt="Montessori synthetic daily preview">
+            <div class="hero-shade">
+              <span id="dateLabel">今日</span>
+              <strong id="cardTitle">合成倒水练习</strong>
+            </div>
+          </section>
+
+          <section class="status-strip">
+            <div>
+              <span>类别</span>
+              <strong id="categoryLabel">日常生活</strong>
+            </div>
+            <div>
+              <span>置信度</span>
+              <strong id="confidenceLabel">中</strong>
+            </div>
+            <div>
+              <span>复核</span>
+              <strong id="reviewLabel">需要</strong>
+            </div>
+          </section>
+
+          <section class="section-block" id="reviewBlock">
+            <h3>家长复核</h3>
+            <ul id="reviewList"></ul>
+          </section>
+
+          <section class="section-block">
+            <h3>观察线索</h3>
+            <div class="fact-line">
+              <span>工作区</span>
+              <strong id="workAreaLabel">桌面</strong>
+            </div>
+            <div class="fact-line">
+              <span>动作</span>
+              <strong id="actionLabel">操作中</strong>
+            </div>
+            <div class="chip-group" id="materialChips"></div>
+            <div class="chip-group" id="cueChips"></div>
+          </section>
+        </div>
+
+        <div class="widget-screen" id="widgetScreen" hidden>
+          <div class="home-grid">
+            <div class="app-dot"></div>
+            <div class="app-dot muted"></div>
+            <div class="app-dot blue"></div>
+            <div class="app-dot amber"></div>
+          </div>
+          <article class="ios-widget">
+            <div class="widget-top">
+              <span id="widgetDate">今日</span>
+              <span id="widgetBadge">需复核</span>
+            </div>
+            <strong id="widgetTitle">合成倒水练习</strong>
+            <p id="widgetPrompt">确认水滴是否需要家长处理</p>
+            <span class="widget-open">打开复核 ↗</span>
+          </article>
+          <div class="dock">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/ios-preview.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.env
+*.env
+node_modules/
+output/
+runs/
+*.log
+
+# Local presentation and archive artifacts stay out of the public repo.
+*.zip
+*.pptx
+ppt_extract_current/
+ppt_review_png/
+montessori_pptx_build/
+validate_new_pptx/
+validate_new_pptx2/

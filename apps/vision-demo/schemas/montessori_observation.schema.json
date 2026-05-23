@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://montessori-space.local/schemas/montessori_observation.schema.json",
+  "title": "Montessori Space Vision Observation",
+  "type": "object",
+  "required": ["test_answer", "observation"],
+  "additionalProperties": false,
+  "properties": {
+    "test_answer": {
+      "type": "string",
+      "description": "Concise answer used by the automated capability test."
+    },
+    "observation": {
+      "type": "object",
+      "required": [
+        "activity_label",
+        "activity_category",
+        "materials",
+        "work_area",
+        "child_action",
+        "environment_cues",
+        "safety_cues",
+        "confidence",
+        "evidence",
+        "needs_parent_review",
+        "privacy_boundary",
+        "corpus_tags"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "activity_label": { "type": "string" },
+        "activity_category": {
+          "type": "string",
+          "enum": [
+            "practical_life",
+            "sensorial",
+            "language",
+            "math",
+            "art",
+            "movement",
+            "order_return",
+            "environment",
+            "unknown"
+          ]
+        },
+        "materials": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "work_area": {
+          "type": "string",
+          "enum": ["floor_mat", "table", "shelf", "multiple", "unknown"]
+        },
+        "child_action": {
+          "type": "string",
+          "enum": ["taking_material", "working", "returning_material", "waiting", "mixed", "unknown"]
+        },
+        "environment_cues": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "safety_cues": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["low", "medium", "high"]
+        },
+        "evidence": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "needs_parent_review": { "type": "boolean" },
+        "privacy_boundary": {
+          "type": "object",
+          "required": ["no_identity", "no_emotion", "no_diagnosis", "no_scoring"],
+          "additionalProperties": false,
+          "properties": {
+            "no_identity": { "type": "boolean", "const": true },
+            "no_emotion": { "type": "boolean", "const": true },
+            "no_diagnosis": { "type": "boolean", "const": true },
+            "no_scoring": { "type": "boolean", "const": true }
+          }
+        },
+        "corpus_tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

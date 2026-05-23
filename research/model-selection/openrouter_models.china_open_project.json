@@ -1,0 +1,52 @@
+[
+  {
+    "id": "qwen/qwen3-vl-8b-instruct",
+    "label": "qwen3-vl-8b-instruct",
+    "enabled": true
+  },
+  {
+    "id": "qwen/qwen3-vl-30b-a3b-instruct",
+    "label": "qwen3-vl-30b-a3b-instruct",
+    "enabled": true
+  },
+  {
+    "id": "qwen/qwen3-vl-32b-instruct",
+    "label": "qwen3-vl-32b-instruct",
+    "enabled": false
+  },
+  {
+    "id": "z-ai/glm-4.6v",
+    "label": "glm-4.6v",
+    "enabled": true
+  },
+  {
+    "id": "qwen/qwen2.5-vl-72b-instruct",
+    "label": "qwen2.5-vl-72b-instruct",
+    "enabled": false
+  },
+  {
+    "id": "qwen/qwen3-vl-8b-thinking",
+    "label": "qwen3-vl-8b-thinking",
+    "enabled": false
+  },
+  {
+    "id": "qwen/qwen3-vl-30b-a3b-thinking",
+    "label": "qwen3-vl-30b-a3b-thinking",
+    "enabled": false
+  },
+  {
+    "id": "baidu/ernie-4.5-vl-28b-a3b",
+    "label": "ernie-4.5-vl-28b-a3b",
+    "enabled": false
+  },
+  {
+    "id": "qwen/qwen3.5-9b",
+    "label": "qwen3.5-9b-api-reference",
+    "enabled": false
+  },
+  {
+    "id": "qwen/qwen3.5-flash-02-23",
+    "label": "qwen3.5-flash-api-reference",
+    "enabled": false
+  }
+]
