@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 export const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+export const repoRoot = path.resolve(projectRoot, "..", "..");
 export const defaultModel = "qwen/qwen3-vl-8b-instruct";
 export const apiUrl = "https://openrouter.ai/api/v1/chat/completions";
 
@@ -18,8 +19,7 @@ const parseEnvLine = (line) => {
 
 export const loadLocalEnv = () => {
   const candidates = [
-    path.join(projectRoot, ".env"),
-    path.resolve(projectRoot, "..", "multimodal_eval_set", ".env")
+    path.join(projectRoot, ".env")
   ];
 
   for (const envPath of candidates) {

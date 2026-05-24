@@ -4,6 +4,16 @@ node_modules/
 output/
 runs/
 *.log
+.DS_Store
+Thumbs.db
+
+# Local app and platform build outputs.
+dist/
+build/
+DerivedData/
+.swiftpm/
+*.xcuserstate
+xcuserdata/
 
 # Local presentation and archive artifacts stay out of the public repo.
 *.zip

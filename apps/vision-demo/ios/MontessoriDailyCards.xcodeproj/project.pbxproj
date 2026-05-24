@@ -73,9 +73,9 @@
 		000000000000000000000050 /* DailyCardsSeed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Resources/DailyCardsSeed.json; sourceTree = "<group>"; };
 		000000000000000000000053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000000000000000000000054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		000000000000000000000056 /* 10_daily_report_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ../testset/images/10_daily_report_preview.png; sourceTree = SOURCE_ROOT; };
-		000000000000000000000059 /* 03_red_rods_not_returned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ../testset/images/03_red_rods_not_returned.png; sourceTree = SOURCE_ROOT; };
-		000000000000000000000062 /* 02_pouring_tray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ../testset/images/02_pouring_tray.png; sourceTree = SOURCE_ROOT; };
+		000000000000000000000056 /* 10_daily_report_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ../../../research/montessori-frame-eval/images/10_daily_report_preview.png; sourceTree = SOURCE_ROOT; };
+		000000000000000000000059 /* 03_red_rods_not_returned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ../../../research/montessori-frame-eval/images/03_red_rods_not_returned.png; sourceTree = SOURCE_ROOT; };
+		000000000000000000000062 /* 02_pouring_tray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ../../../research/montessori-frame-eval/images/02_pouring_tray.png; sourceTree = SOURCE_ROOT; };
 		000000000000000000000065 /* MontessoriDailyCardsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontessoriDailyCardsWidgetBundle.swift; sourceTree = "<group>"; };
 		000000000000000000000067 /* DailyCardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardWidget.swift; sourceTree = "<group>"; };
 		000000000000000000000069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };

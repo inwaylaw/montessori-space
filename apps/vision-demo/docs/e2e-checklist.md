@@ -25,7 +25,7 @@ npm run serve
 
 1. 选择任意样张。
 2. 点击 `识别`。
-3. 对照 `testset/answer_key.md` 检查模型是否抓住核心活动。
+3. 对照 `../../research/montessori-frame-eval/answer_key.md` 检查模型是否抓住核心活动。
 
 ## 通过标准
 

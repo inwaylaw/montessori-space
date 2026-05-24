@@ -1,0 +1,15 @@
+{
+  "name": "montessori-space",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Local-first Montessori Space observation demo and synthetic research artifacts.",
+  "scripts": {
+    "test": "npm --prefix apps/vision-demo test",
+    "eval:dry": "npm --prefix apps/vision-demo run eval:dry",
+    "eval:mock": "npm --prefix apps/vision-demo run eval:mock",
+    "serve": "npm --prefix apps/vision-demo run serve"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

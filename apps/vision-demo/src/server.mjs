@@ -2,6 +2,7 @@ import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
 import { getRuntimeConfig, loadLocalEnv, projectRoot } from "./env.mjs";
+import { appLocalTestsetRoot, canonicalTestsetRoot } from "./dataset.mjs";
 import { appendJsonl } from "./jsonl.mjs";
 import { buildLiveMessages } from "./prompt.mjs";
 import { callOpenRouter } from "./openrouter-client.mjs";
@@ -41,11 +42,19 @@ const sendJson = (response, status, value) => {
   response.end(JSON.stringify(value, null, 2));
 };
 
+const getTestsetRoot = () => (
+  fs.existsSync(path.join(canonicalTestsetRoot, "testset.jsonl"))
+    ? canonicalTestsetRoot
+    : appLocalTestsetRoot
+);
+
 const serveFile = (response, requestPath) => {
   const publicRoot = path.join(projectRoot, "public");
   const routePath = requestPath === "/" ? "/index.html" : decodeURIComponent(requestPath);
-  const baseRoot = routePath.startsWith("/testset/") ? projectRoot : publicRoot;
-  const filePath = path.resolve(baseRoot, `.${routePath}`);
+  const isTestsetAsset = routePath.startsWith("/testset/");
+  const baseRoot = isTestsetAsset ? getTestsetRoot() : publicRoot;
+  const assetPath = isTestsetAsset ? routePath.slice("/testset".length) : routePath;
+  const filePath = path.resolve(baseRoot, `.${assetPath}`);
   if (!filePath.startsWith(path.resolve(baseRoot))) {
     sendJson(response, 403, { error: "Forbidden" });
     return;

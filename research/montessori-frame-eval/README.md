@@ -2,6 +2,8 @@
 
 Synthetic Montessori Space video-frame evaluation set. It uses generated frames only and contains no real child data.
 
+This directory is the canonical Montessori-specific test set. The runnable Web demo reads these fixtures through its `/testset/...` route instead of carrying a duplicate copy under `apps/vision-demo/`.
+
 ## Coverage
 
 - Montessori material recognition

@@ -1,0 +1,11 @@
+* text=auto eol=lf
+
+# Keep GitHub's language panel focused on maintained product surfaces.
+# These scripts generate synthetic research fixtures and can otherwise
+# overstate PowerShell as a primary implementation language.
+research/**/generate_*.ps1 linguist-documentation=true
+
+# Synthetic images and Xcode project metadata are artifacts, not hand-authored
+# application logic for language-stat purposes.
+research/**/images/** linguist-generated=true
+*.pbxproj linguist-generated=true

@@ -15,7 +15,7 @@
 - 语料标准：`docs/corpus-standard.md`
 - 架构说明：`docs/project-design.md`
 - 手动 E2E 清单：`docs/e2e-checklist.md`
-- 合成测试集：`testset/testset.jsonl` 和 `testset/images/`
+- 合成测试集：`../../research/montessori-frame-eval/testset.jsonl` 和 `../../research/montessori-frame-eval/images/`
 
 ## 默认模型
 

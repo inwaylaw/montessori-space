@@ -1,9 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
-import { projectRoot } from "./env.mjs";
+import { projectRoot, repoRoot } from "./env.mjs";
 import { readJsonl } from "./jsonl.mjs";
 
-export const defaultTestsetPath = path.join(projectRoot, "testset", "testset.jsonl");
+export const canonicalTestsetRoot = path.join(repoRoot, "research", "montessori-frame-eval");
+export const appLocalTestsetRoot = path.join(projectRoot, "testset");
+export const defaultTestsetPath = fs.existsSync(path.join(canonicalTestsetRoot, "testset.jsonl"))
+  ? path.join(canonicalTestsetRoot, "testset.jsonl")
+  : path.join(appLocalTestsetRoot, "testset.jsonl");
 
 export const loadTestset = (testsetPath = defaultTestsetPath) => {
   const resolved = path.resolve(testsetPath);

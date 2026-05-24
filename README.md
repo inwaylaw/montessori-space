@@ -1,8 +1,8 @@
 # 蒙氏空间
 
-蒙氏空间是一个以于玛利亚·蒙台梭利教育理念的“有准备的环境”，旨在为0-6岁儿童提供秩序、自由、安全、美感和易接近的空间，本项目面向有 0-6 岁婴幼儿家庭构建本地优先 AI 观察项目。它希望帮助家长在保证家庭隐私安全主权的前提下，把家庭蒙氏空间中的探索、专注和家长反馈等异构信息整理成可回顾、可纠错、可解释的成长记录和数据资产，以探寻一条与以人为本、与AI共成长的开放路线。
+蒙氏空间是一个面向 0-6 岁婴幼儿家庭的本地优先 AI 观察项目。它以玛利亚·蒙台梭利“有准备的环境”为理念背景，希望在不牺牲家庭隐私和儿童安全边界的前提下，把家庭蒙氏空间中的探索、专注、材料使用和家长反馈整理成可回顾、可纠错、可解释的观察记录。
 
-当前仓库是 GitHub 先行版：概念倡议 + 安全协作入口。它不是完整产品发布。
+当前仓库是公开先行版：概念边界、隐私原则、合成样例、可运行视觉识别示范和研究记录。它不是完整产品发布。
 
 ## 这不是什么
 
@@ -30,6 +30,35 @@ v0.2 新增一个可运行的视觉识别示范和研究记录：
 - `docs/cloud-assisted-demo.md`: OpenRouter 云端辅助演示模式的边界说明。
 
 重要区别：v0.2 的 OpenRouter 代理只是 `cloud-assisted demo mode`。它可以帮助研究云端 VLM 是否理解合成蒙氏帧，但它不是最终的本地部署方案。长期目标仍是 `local-first project`，真正本地 VLM/Jetson 推理仍在后续路线图中。
+
+## 仓库结构与语言说明
+
+这个仓库故意保留了多种语言，但每种语言都有清晰边界：
+
+- JavaScript: `apps/vision-demo/src/` 和 `research/model-selection/` 中的本地服务、评测和打分脚本。
+- HTML/CSS: `apps/vision-demo/public/` 中的浏览器观察台和 iOS 预览页面。
+- Swift: `apps/vision-demo/ios/` 中的 iOS 每日卡片 MVP。
+- PowerShell: `research/**/generate_*.ps1` 中的合成测试图和 JSONL 生成脚本。
+
+GitHub 的 Languages 面板会按文件体积统计这些代码。为避免把一次性合成数据生成脚本误读成主技术栈，仓库使用 `.gitattributes` 对 GitHub Linguist 做了降噪；主线仍是本地优先 AI 观察 demo、研究评测和 iOS 预览。
+
+## 本地快速验证
+
+需要 Node.js 20+。默认验证不调用云服务，也不需要 API key。
+
+```powershell
+npm test
+npm --prefix apps/vision-demo run eval:dry
+npm --prefix apps/vision-demo run eval:mock
+```
+
+如需启动浏览器观察台：
+
+```powershell
+npm --prefix apps/vision-demo run serve
+```
+
+打开 `http://127.0.0.1:8787`。只有在配置 `OPENROUTER_API_KEY` 并主动点击识别或运行云端评测时，所选样张或帧才会发送到 OpenRouter。
 
 ## 阅读入口
 

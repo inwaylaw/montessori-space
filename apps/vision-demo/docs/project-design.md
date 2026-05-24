@@ -1,14 +1,14 @@
 # 蒙氏空间视觉识别示范项目设计
 
-## 需要的信息判断
+## 设计依据
 
-我先确认了三类信息：
+当前示范基于三类信息：
 
 1. 现有项目资料：`montessori-space` 明确了本地优先、合成样本、隐私边界和不做诊断评分。
-2. 现有测试资产：`multimodal_eval_set/montessori_frame_eval_set` 已有 15 条合成蒙氏帧样本，适合直接复用为模型能力测试集。
+2. 现有测试资产：`research/montessori-frame-eval/` 是 15 条合成蒙氏帧样本和评测记录的单一来源。
 3. 运行约束：目标是先跑通示范流程，默认用 OpenRouter 上的 `qwen/qwen3-vl-8b-instruct`，不能把 API key 写入文件，真实摄像头 E2E 由用户最后手动执行。
 
-因为这些信息足够形成一个最小可用示范，所以本轮没有继续向用户追问。
+这些信息足够支撑一个最小可用示范，不需要引入数据库、用户系统或生产级同步能力。
 
 ## 架构
 
@@ -17,7 +17,7 @@ flowchart LR
   A["合成测试图片 / 摄像头帧"] --> B["本地浏览器或评测脚本"]
   B --> C["Node 本地代理"]
   C --> D["OpenRouter Chat Completions"]
-  D --> E["Qwen3-VL-30B-A3B-Instruct"]
+  D --> E["qwen/qwen3-vl-8b-instruct 默认模型"]
   E --> F["结构化 observation JSON"]
   F --> G["自动评分 / 人工复核日志"]
 ```
@@ -30,13 +30,13 @@ flowchart LR
 - `src/prompt.mjs`: 统一提示词和结构化输出约束。
 - `schemas/montessori_observation.schema.json`: 模型输出标准。
 - `docs/corpus-standard.md`: 语料和标注标准。
-- `testset/`: 复制后的合成蒙氏帧测试集。
+- `../../research/montessori-frame-eval/`: 合成蒙氏帧测试集和评测记录；Web demo 通过 `/testset/...` 路由读取样张。
 
 ## 数据流
 
 自动评测：
 
-1. 读取 `testset/testset.jsonl`。
+1. 读取 `../../research/montessori-frame-eval/testset.jsonl`。
 2. 将图片转为 data URL，随问题一起发给模型。
 3. 要求模型返回 `test_answer` 和 `observation`。
 4. 用简单规则评分 `test_answer`。

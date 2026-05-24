@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { projectRoot } from "../src/env.mjs";
-import { loadTestset } from "../src/dataset.mjs";
+import { canonicalTestsetRoot, defaultTestsetPath, loadTestset } from "../src/dataset.mjs";
 import { buildDailyCardPayload, observationToDailyCard } from "../src/daily-card.mjs";
 import { parseModelJson } from "../src/openrouter-client.mjs";
 import { scoreItem } from "../src/score.mjs";
@@ -12,6 +12,7 @@ const assert = (condition, message) => {
 };
 
 const { dir, items } = loadTestset();
+assert(defaultTestsetPath === path.join(canonicalTestsetRoot, "testset.jsonl"), "Default test set should use the canonical research fixtures.");
 assert(items.length === 15, `Expected 15 Montessori test items, got ${items.length}`);
 for (const item of items) {
   assert(item.id && item.question && item.expected_answer, `Incomplete test item: ${JSON.stringify(item)}`);

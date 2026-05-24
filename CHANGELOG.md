@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Clarified repository structure, language boundaries, and local verification from the root README.
+- Added root `npm test`, GitHub Actions CI, and a privacy-focused pull request template.
+- Added Linguist configuration to keep synthetic fixture generation scripts from overstating the primary implementation language.
+- Removed a stale environment lookup that referenced an older outer-workspace evaluation folder.
+- Consolidated the Montessori frame fixtures so the Web demo reads the canonical `research/montessori-frame-eval/` test set instead of carrying a duplicate copy.
+
 ## v0.2 - Vision Demo and Research Update
 
 - Added `apps/vision-demo/`, a runnable Node.js demo for synthetic Montessori frame evaluation, local camera/manual image input, structured observation output, and iOS daily-card preview.
